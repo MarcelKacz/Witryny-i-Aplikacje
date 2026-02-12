@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaczmarek Z7_html</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .czerwony-tekst {
+            color: red;
+            font-size: 24px;
+        }
+
+        .span-20 {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>1. NA CO POZWALA STYL LOKALNY?</h1>
+<p>
+Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi strony. 
+Jest wstawiany w tej samej linii, w której znajduje się element formatowany. O tym, który 
+element będzie formatowany, decyduje słowo kluczowe "selektor".
+</p>
+
+<h1>2. SKŁADNIA TEORETYCZNA</h1>
+<table>
+<tr>
+<td>
+&lt;selektor&nbsp;style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;<br>
+lub inaczej:<br>
+&lt;selektor&nbsp;style="nasze style"&gt;treść bloku&lt;/selektor&gt;
+</td>
+</tr>
+</table>
+
+<h1>3. CO MOŻE BYĆ SEKTOREM?</h1>
+<p>
+Selektorem może być praktycznie dowolny znacznik, np. &lt;p&gt; (akapit), &lt;h1&gt; (nagłówek), 
+&lt;td&gt; (komórka tabeli) i inne. Elementom znajdującym się pomiędzy tymi znacznikami 
+nadajemy atrybuty formatowania.
+</p>
+
+<h1>4. CO WPISUJEMY JAKO CECHĘ?</h1>
+<p>
+Jako "cechę" (ang. property) wpisujemy, o jakie konkretnie atrybuty formatowania chodzi, 
+np. kolor tekstu (color), wielkość czcionki (font-size) itd. Jednemu selektorowi możemy 
+nadać kilka cech, rozdzielonych średnikami.
+</p>
+
+<h1>5. CO WPISUJEMY JAKO WARTOŚĆ?</h1>
+<p>
+Jako "wartość" wpisujemy dokładną wartość atrybutu, np. dla koloru tekstu: red, blue lub #31F4A5. 
+Wartość zależy od cechy, po której stoi w deklaracji.
+</p>
+
+<h1>Przykład stylu lokalnego</h1>
+
+<p class="czerwony-tekst">
+To jest kolor tekstu na czerwono (styl lokalny)
+</p>
+
+<p>
+Styl lokalny w standardowej wielkości z użyciem znacznika &lt;p&gt;.
+</p>
+
+<span class="span-20">
+Styl lokalny w wielkości 20px (znacznik span)
+</span>
+
+<br>
+
+<span>
+Styl lokalny w standardowej wielkości (znacznik span)
+</span>
+
+<!--  Kaczmarek Z11_html  -->
+
+</body>
+</html>
